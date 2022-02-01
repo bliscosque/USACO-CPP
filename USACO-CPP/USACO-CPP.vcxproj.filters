@@ -26,5 +26,8 @@
     <None Include="milk2.in">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="transform.in">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

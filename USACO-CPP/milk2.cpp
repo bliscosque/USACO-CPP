@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int mainMILK() {
     ofstream fout("milk2.out");
     ifstream fin("milk2.in");
     int n;
