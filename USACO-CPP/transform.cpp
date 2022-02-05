@@ -75,6 +75,7 @@ bool test_6(char vOrig[10][10], char vTrans[10][10]) {
 
 //rotate 90
 bool test_1(char vOrig[10][10], char vTrans[10][10]) {
+    //print(vOrig);
     rotate_90(vOrig);
     //print(v90);
     //print(vTrans);
@@ -92,15 +93,22 @@ bool test_3(char vOrig[10][10], char vTrans[10][10]) {
 }
 
 bool test_4(char vOrig[10][10], char vTrans[10][10]) {
+    //cout << "T4" << endl;
+    //print(vOrig);
+    //cout << endl;
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; ++j) {
-            vref[i][j] = vOrig[i][n - j];
+        for (int j = 0; j < n; j++) {
+            vref[i][j] = vOrig[i][n - j - 1];
+            //cout << i << " " << j << " " << n - j << endl;
         }
     }
+    //print(vref);
+    //cout << endl;
     return test_6(vref, vTrans);
 }
 
 bool test_5(char vOrig[10][10], char vTrans[10][10]) {
+    //cout << "in test 5" << endl;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             vr90[i][j] = vref[n - j - 1][i];
@@ -118,6 +126,14 @@ bool test_5(char vOrig[10][10], char vTrans[10][10]) {
             vr270[i][j] = vr180[n - j - 1][i];
         }
     }
+    //print(vr90);
+    //cout << endl;
+    //print(vr180);
+   // cout << endl;
+    //print(vr270);
+    //cout << endl;
+    //print(vTrans);
+
     if (test_6(vr90, vTrans) || test_6(vr180, vTrans) || test_6(vr270, vTrans)) return true;
     return false;
 }
@@ -143,13 +159,16 @@ int mainT() {
             vDest[i][j] = line[j];
         }
     }
-    if (test_1(vOrig, vDest)) fout << "1" << endl;
-    else if (test_2(vOrig, vDest)) fout << "2" << endl;
-    else if (test_3(vOrig, vDest)) fout << "3" << endl;
-    else if (test_4(vOrig, vDest)) fout << "4" << endl;
-    else if (test_5(vOrig, vDest)) fout << "5" << endl;
-    else if (test_6(vOrig, vDest)) fout << "6" << endl;
-    else fout << "7" << endl;
+    string out = "7";
+    if (test_1(vOrig, vDest)) out="1";
+    else if (test_2(vOrig, vDest)) out="2";
+    else if (test_3(vOrig, vDest)) out="3";
+    else if (test_4(vOrig, vDest)) out="4";
+    else if (test_5(vOrig, vDest)) out="5";
+    else if (test_6(vOrig, vDest)) out="6";
+    //cout << out << endl;
+    
+    fout << out << endl;
 
     return 0;
 }
