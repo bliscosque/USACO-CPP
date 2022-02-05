@@ -122,7 +122,7 @@ bool test_5(char vOrig[10][10], char vTrans[10][10]) {
     return false;
 }
 
-int main() {
+int mainT() {
     ofstream fout("transform.out");
     ifstream fin("transform.in"); //for the current file, answer should be 5
     

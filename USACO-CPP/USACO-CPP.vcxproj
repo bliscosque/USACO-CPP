@@ -140,11 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="milk2.cpp" />
+    <ClCompile Include="namenum.cpp" />
     <ClCompile Include="transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="milk2.in" />
+    <None Include="namenum.in" />
     <None Include="transform.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dict.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
