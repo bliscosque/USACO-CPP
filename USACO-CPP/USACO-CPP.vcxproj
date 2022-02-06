@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="milk2.cpp" />
     <ClCompile Include="namenum.cpp" />
+    <ClCompile Include="palsquare.cpp" />
     <ClCompile Include="transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="milk2.in" />
     <None Include="namenum.in" />
+    <None Include="palsquare.in" />
     <None Include="transform.in" />
   </ItemGroup>
   <ItemGroup>

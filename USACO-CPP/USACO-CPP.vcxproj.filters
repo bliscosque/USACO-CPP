@@ -24,6 +24,9 @@
     <ClCompile Include="namenum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="palsquare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="milk2.in">
@@ -33,6 +36,9 @@
       <Filter>Source Files</Filter>
     </None>
     <None Include="namenum.in">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="palsquare.in">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

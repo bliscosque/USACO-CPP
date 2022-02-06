@@ -28,7 +28,7 @@ string conv(string s) {
 	return ret;
 }
 
-int main() {
+int mainNN() {
 
 	ofstream fout("namenum.out");
 	ifstream fin("namenum.in");
