@@ -30,7 +30,7 @@ string conv_rev(int i, int b) {
 	return res;
 }
 
-int main() {
+int mainPS() {
 	ofstream fout("palsquare.out");
 	ifstream fin("palsquare.in");
 	int b;
